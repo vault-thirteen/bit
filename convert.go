@@ -21,6 +21,7 @@ package bit
 
 const BitsPerByte = 8
 
+// Converts the Array of Bits into an Array of Bytes.
 func ConvertBitsToBytes(
 	bits []Bit,
 ) (result []byte, bitsCount int) {
@@ -127,6 +128,7 @@ func ConvertBitsToBytes(
 	return
 }
 
+// Converts the eight Bits into a Byte.
 func ConvertByteBitsToByte(
 	bits [BitsPerByte]Bit,
 ) (result byte) {
@@ -159,6 +161,7 @@ func ConvertByteBitsToByte(
 	return
 }
 
+// Converts the Array of Bytes into an Array of Bits.
 func ConvertBytesToBits(
 	bytes []byte,
 ) (result []Bit) {
@@ -178,6 +181,7 @@ func ConvertBytesToBits(
 	return
 }
 
+// Converts the Byte into an Array of Bits.
 func ConvertByteToBits(
 	b byte,
 ) (result []Bit) {
